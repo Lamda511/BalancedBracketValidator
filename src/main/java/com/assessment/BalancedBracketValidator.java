@@ -22,6 +22,11 @@ public class BalancedBracketValidator {
             '(', ')', '[', ']', '{', '}'
     );
 
+    // Prevent instantiation of the class as it is a utility class.
+    private BalancedBracketValidator() {
+        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
+    }
+
     /**
      * Checks if the sequence is balanced according to specific constraints.
      * * Constraints:
